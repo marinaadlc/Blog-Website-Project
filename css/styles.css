@@ -170,6 +170,7 @@ ul{
   .subscribe-inner{
     background: #17260E;
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
     .subscribe-left{
@@ -205,3 +206,22 @@ ul{
         background: #FFDED6;
         border:0;
       }
+    @media (max-width: 1200px){
+      .subscribe-inner{
+        padding: 50px 0;
+      }
+      .subscribe-left, .subscribe-middle, .subscribe-right{
+        width:100%;
+      }
+        h2.subscribe-left{
+          text-align: center;
+          margin-top:0;
+        }
+        form.subscribe-right{
+          margin-top:30px;
+        }
+    }
+
+
+  /* POPULAR RECIPES */
+  
