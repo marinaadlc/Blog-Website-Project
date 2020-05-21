@@ -17,6 +17,7 @@ ul{
 /* STYLE RECURRING CLASSES */
 .section-title{
   text-transform: uppercase;
+  text-align: center;
 }
 .bold-text{
   font-family: 'PT Sans Narrow', sans-serif;
@@ -121,17 +122,18 @@ ul{
   /* NEWS SECTION */
   .news-gallery{
     display:flex;
-    flex-direction: row;
     flex-wrap:wrap;
     justify-content: space-around;
     margin-bottom:0;
   }
-    .news-recipe{
-      height: 550px;
-      width:370px;
+    .recipe-box{
       display:flex;
       flex-direction: column;
       align-items: center;
+    }
+    .news-recipe{
+      height: 550px;
+      width:370px;
     }
         .recipe-image{
           flex: 5;
@@ -206,9 +208,12 @@ ul{
         background: #FFDED6;
         border:0;
       }
+        .light-form button:hover{
+          background: #ffb9a8;
+        }
     @media (max-width: 1200px){
       .subscribe-inner{
-        padding: 50px 0;
+        padding: 50px 20px;
       }
       .subscribe-left, .subscribe-middle, .subscribe-right{
         width:100%;
@@ -224,4 +229,71 @@ ul{
 
 
   /* POPULAR RECIPES */
-  
+.popular-section{
+  background:#fff3f0;
+  margin: 50px 0;
+  padding: 50px 0;
+}
+  .popular-gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+  }
+    .popular-recipe{
+      height: 400px;
+      width: 220px;
+      margin:10px 5px;
+      background: white;
+    }
+      .popular-recipe .recipe-title{
+        flex:3;
+        padding-top:0;
+        margin-top: -20px;
+      }
+        .circle{
+          height:40px;
+          width:40px;
+          border-radius: 50%;
+          padding-top:-15px;
+          margin:0 auto;
+          background:white;
+        }
+        .number{
+          margin-top:-10px;
+          margin-bottom: 5px;
+          font-family: 'Raleway', sans-serif;
+        }
+      .popular-recipe:hover{
+        background: #17260E;
+        color:white;
+      }
+      .popular-recipe:hover .circle{
+        background: #17260E;
+      }
+    .break{
+
+      display:none;
+      flex-basis:100%;
+      height:0;
+    }
+@media (max-width:1200px){
+  .popular-gallery{
+    justify-content: center;
+  }
+    .popular-recipe{
+      margin:10px;
+    }
+    .break{
+      display:flex;
+    }
+}
+@media (max-width:800px){
+    .popular-gallery{
+      justify-content: center;
+    }
+    .popular-recipe{
+      height:420px;
+      width:400px;
+    }
+}
