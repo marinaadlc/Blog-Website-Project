@@ -3,7 +3,10 @@ body{
   margin:0;
   font-family: 'Raleway', sans-serif;
 }
-
+ul{
+  padding:0;
+  list-style: none;
+}
 /* LAYOUT RECURRING CLASSES */
 .wrap{
   max-width: 1200px;
@@ -19,6 +22,7 @@ body{
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: bold;
   color:black;
+  text-decoration: none;
 }
 .all-caps-text{
   font-family: 'PT Sans Narrow', sans-serif;
@@ -27,6 +31,7 @@ body{
   letter-spacing: 0.1em;
   color:black;
   text-decoration: none;
+  text-transform: uppercase;
 }
 /* NAVBAR */
 .header{
@@ -43,7 +48,6 @@ body{
     .nav-menu{
       display:flex;
       justify-content: center;
-      list-style: none;
       padding:0;
       margin: auto 15px;
       font-size: 0.7em;
@@ -94,12 +98,11 @@ body{
       justify-content: center;
       align-items: center;
       width: 40%;
-      text-transform: uppercase;
     }
       .svg-arrow{
         margin-left:20px;
       }
-  @media (min-width: 1000px){
+  @media (min-width: 1200px){
     .page-header-left{
       width:25%;
     }
@@ -114,3 +117,91 @@ body{
       text-transform: uppercase;
     }
   }
+
+  /* NEWS SECTION */
+  .news-gallery{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-bottom:0;
+  }
+    .news-recipe{
+      height: 550px;
+      width:370px;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+        .recipe-image{
+          flex: 5;
+          width:100%;
+          object-fit: cover;
+          overflow: hidden;
+        }
+        .recipe-title{
+          flex:1;
+          text-align: center;
+          padding-top: 10px;
+        }
+    @media (max-width: 1200px) and (min-width: 850px){
+      .news-gallery{
+        justify-content: center;
+      }
+      .news-recipe{
+        margin:0 15px;
+      }
+    }
+    @media (max-width: 850px){
+      .news-recipe{
+        width: 80vw;
+        max-width: 500px;
+      }
+    }
+  .link-repeat{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: -20px auto 30px auto;
+    color:#B45026;
+  }
+
+  /* SUBSCRIBE SECTION */
+  .subscribe-inner{
+    background: #17260E;
+    display:flex;
+    justify-content: center;
+  }
+    .subscribe-left{
+      width:21%;
+      color:#FFDED6;
+    }
+    .subscribe-middle{
+      width:45%;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+      span.subscribe-middle{
+        color:white;
+        text-align: center;
+      }
+    .subscribe-right{
+      width:25%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+      .light-form input{
+        padding: 15px;
+        border:0;
+        width:75%;
+      }
+        .light-form ::placeholder{
+          color:black;
+        }
+      .light-form button{
+        padding: 15px 20px;
+        background: #FFDED6;
+        border:0;
+      }
