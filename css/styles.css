@@ -1,0 +1,49 @@
+body{
+  font-size: 1.5em; /*Basic font size*/
+  margin:0;
+}
+
+
+/* LAYOUT RECURRING CLASSES */
+.wrap{
+  max-width: 1200px;
+  margin: 0 auto; /*center on page*/
+}
+
+/* NAVBAR */
+.header{
+  background-color: white;
+  min-height: 40px;
+}
+  .header-inner{
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content:center;
+    border-bottom: 3px solid black;
+  }
+    .nav-menu{
+      display:flex;
+      justify-content: center;
+      list-style: none;
+      padding:0;
+      margin: auto 15px;
+      font-size: 0.7em;
+    }
+        .header-logo{
+          height:100px;
+          width: 200px;
+          background-image: url("../imgs/site-logo.png");
+          background-position: center;
+          background-size: cover;
+        }
+    @media (min-width: 800px){
+      .nav-menu{
+        font-size:1em;
+        margin: auto 20px;
+      }
+      .header-logo{
+        height:150px;
+        width: 300px;
+      }
+    }
