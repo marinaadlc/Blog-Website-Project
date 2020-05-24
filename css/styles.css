@@ -405,7 +405,6 @@ ul{
           justify-content: flex-start;
           align-items: center;
         }
-          .checkbox-filter{
-            margin-right:5px;
-            background:blue;
+          .filter input{
+
           }
