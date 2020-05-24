@@ -385,26 +385,42 @@ ul{
         border-style: none;
       }
 
-    .filter-header{
+    .sub-header-container{
       display:flex;
       align-items: center;
       justify-content: center;
     }
-      .filter-header svg{
+      .sub-header-container svg{
         margin:0 7px;
       }
 
     .filter-container{
       display:flex;
     }
-        .filter-type{
+        .filter-title{
           text-transform: uppercase;
         }
-        .filter{
+        .filter-checkbox{
           display:flex;
           justify-content: flex-start;
           align-items: center;
         }
-          .filter input{
-
+          .default-checkmark{
+            display:none; /*Hide default checkbox*/
           }
+          .custom-checkmark{
+            height:20px;
+            width:20px;
+            border:1px solid #2A2B2A;
+          }
+          .filter-checkbox input:checked ~ .custom-checkmark{ /*selecciona el checkmark precedido por el default checkmark, por eso se pone detrás para poder seleccionarlo*/
+            background-color:black;
+          }
+              .custom-checkmark:after{
+                content="";
+                display:none;
+              }
+              .filter-checkbox input:checked ~ .custom-checkmark:after{
+                display: block;
+              }
+              
