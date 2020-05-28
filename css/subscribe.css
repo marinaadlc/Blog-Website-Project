@@ -41,6 +41,9 @@
       .subscribe-form-container p{
         margin-top:70px;
       }
+        .subscribe-title{
+          font-size: 2rem;
+        }
         .subscribe-form input{
           width:70%;
           margin:15px;

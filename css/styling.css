@@ -4,6 +4,10 @@ body{
   font-family: 'Raleway', sans-serif;
   color:#2A2B2A;
 }
+h2{
+  font-size: 1.5rem;
+  margin:0;
+}
 ul{
   padding:0;
   list-style: none;
