@@ -1,0 +1,47 @@
+body{
+  font-size: 1.5em; /*Basic font size*/
+  margin:0;
+  font-family: 'Raleway', sans-serif;
+  color:#2A2B2A;
+}
+ul{
+  padding:0;
+  list-style: none;
+}
+/* LAYOUT RECURRING CLASSES */
+.wrap{
+  max-width: 1200px;
+  margin: 0 auto; /*center on page*/
+  padding:0 16px;
+}
+
+.section-title{
+  text-transform: uppercase;
+  text-align: center;
+}
+.bold-text{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color:#2A2B2A
+}
+.all-caps-text{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color:#2A2B2A;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.black-link{
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color:#2A2B2A;
+}
+.sub-header{
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

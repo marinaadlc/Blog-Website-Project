@@ -1,0 +1,179 @@
+/* NEWS SECTION */
+.news-gallery{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  margin-bottom:0;
+}
+  .recipe-box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-recipe{
+    height: 550px;
+    width:370px;
+  }
+      .recipe-image{
+        flex: 5;
+        width:100%;
+        object-fit: cover;
+        overflow: hidden;
+      }
+      .recipe-title{
+        flex:1;
+        text-align: center;
+        padding-top: 10px;
+      }
+  @media (max-width: 1200px) and (min-width: 850px){
+    .news-gallery{
+      justify-content: center;
+    }
+    .news-recipe{
+      margin:0 15px;
+    }
+  }
+  @media (max-width: 850px){
+    .news-recipe{
+      width: 80vw;
+      max-width: 500px;
+    }
+  }
+.link-repeat{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin: -20px auto 30px auto;
+  color:#B45026;
+}
+
+/* SUBSCRIBE SECTION */
+.subscribe-inner{
+  background: #17260E;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  .subscribe-left{
+    width:21%;
+    color:#FFDED6;
+  }
+  .subscribe-middle{
+    width:45%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+    span.subscribe-middle{
+      color:white;
+      text-align: center;
+    }
+  .subscribe-right{
+    width:25%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .light-form input{
+      padding: 15px;
+      border:0;
+      width:75%;
+    }
+      .light-form ::placeholder{
+        color:#2A2B2A;
+      }
+    .light-form button{
+      padding: 15px 20px;
+      background: #FFDED6;
+      border:0;
+    }
+      .light-form button:hover{
+        background: #ffb9a8;
+      }
+  @media (max-width: 1200px){
+    .subscribe-inner{
+      padding: 50px 20px;
+    }
+    .subscribe-left, .subscribe-middle, .subscribe-right{
+      width:100%;
+    }
+      h2.subscribe-left{
+        text-align: center;
+        margin-top:0;
+      }
+      form.subscribe-right{
+        margin-top:30px;
+      }
+  }
+
+
+/* POPULAR RECIPES */
+.popular-section{
+background:#fff3f0;
+margin: 50px 0 0;
+padding: 50px 0;
+}
+.popular-gallery{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+  .popular-recipe{
+    height: 400px;
+    width: 210px;
+    margin:10px 5px;
+    padding: 10px 10px 0 10px;
+    background: white;
+  }
+    .popular-recipe .recipe-title{
+      flex:3;
+      padding-top:0;
+      margin-top: -20px;
+    }
+      .circle{
+        height:40px;
+        width:40px;
+        border-radius: 50%;
+        padding-top:-15px;
+        margin:0 auto;
+        background:white;
+      }
+      .number{
+        margin-top:-10px;
+        margin-bottom: 5px;
+        font-family: 'Raleway', sans-serif;
+      }
+    .popular-recipe:hover{
+      background: #17260E;
+      color:white;
+    }
+    .popular-recipe:hover .circle{
+      background: #17260E;
+    }
+  .break{
+
+    display:none;
+    flex-basis:100%;
+    height:0;
+  }
+@media (max-width:1200px){
+.popular-gallery{
+  justify-content: center;
+}
+  .popular-recipe{
+    margin:10px;
+  }
+  .break{
+    display:flex;
+  }
+}
+@media (max-width:800px){
+  .popular-gallery{
+    justify-content: center;
+  }
+  .popular-recipe{
+    height:420px;
+    width:400px;
+  }
+}

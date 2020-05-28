@@ -1,0 +1,108 @@
+.subscribe-main{
+  background: #fff3f0;
+}
+  .subscribe-main .page-header-inner{
+    margin:0;
+    padding-top: 15px;
+  }
+  .subscribe-container{
+    margin-top:30px;
+  }
+  .subscribe-design{
+    display:flex;
+    justify-content: center;
+    align-content:center;
+  }
+    .subscribe-break{
+      display:none;
+    }
+
+    .subscribe-img{
+      flex:1;
+      text-align: center;
+    }
+        .subscribe-img img{
+          width:100%;
+          height:50%;
+          max-width: 480px;
+          max-height:1000px;
+          object-position: top;
+          object-fit: cover;
+        }
+    .subscribe-form-container{
+      box-sizing: border-box;
+      flex:1;
+      text-align: center;
+    }
+      .subscribe-form-container h2{
+        margin: 0;
+        font-size: 3rem;
+      }
+      .subscribe-form-container p{
+        margin-top:70px;
+      }
+        .subscribe-form input{
+          width:70%;
+          margin:15px;
+          padding:10px;
+          border: 1px solid black;
+          background: transparent;
+        }
+        .subscribe-form button{
+          padding: 20px;
+          margin: 20px;
+          background: #FFDED6;
+          border:0;
+        }
+          .subscribe-form button:hover{
+            background: #ffb9a8;
+          }
+  @media (max-width: 1020px) and (min-width:600px){
+    .subscribe-container{
+      margin-top:0;
+    }
+    .subscribe-form-container h2{
+      font-size:4vw;
+    }
+    .subscribe-form-container p{
+      margin-top:30px;
+      font-size:2.8vw;
+    }
+    .subscribe-form input{
+      margin:5px;
+      font-size: 0.5em;
+      width:80%;
+    }
+    .subscribe-form button{
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+  @media (max-width:600px){
+    .subscribe-container{
+      margin-top:0;
+    }
+    .page-header-middle{
+      margin:5px;
+    }
+    .subscribe-design{
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+    .subscribe-break{
+      flex-basis:100%;
+      height:0;
+      display:flex;
+    }
+    .subscribe-img img{
+      width: 300px;
+      height:300px;
+      margin-bottom:15px;
+    }
+    .subscribe-form-container p{
+      margin: 5px auto;
+    }
+      .subscribe-form input{
+        width: 90%;
+      }
+  }
