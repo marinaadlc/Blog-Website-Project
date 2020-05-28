@@ -116,6 +116,14 @@
             margin:0 50px;
             text-align: center;
           }
+        .social-icons{
+          width:100%;
+          display:flex;
+          justify-content: center;
+        }
+          .fab{
+            margin:30px 10px 0;
+          }
 
       .foot2{
         margin: 30px 0;

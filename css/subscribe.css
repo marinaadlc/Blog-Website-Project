@@ -1,5 +1,6 @@
 .subscribe-main{
   background: #fff3f0;
+  max-height:600px;
 }
   .subscribe-main .page-header-inner{
     margin:0;
@@ -82,6 +83,9 @@
     }
   }
   @media (max-width:600px){
+  .subscribe-main{
+    max-height: none;
+  }
     .subscribe-container{
       margin-top:0;
     }
@@ -108,4 +112,8 @@
       .subscribe-form input{
         width: 90%;
       }
+  }
+
+  .subscribe-footer-line{
+    margin-bottom:50px;
   }
