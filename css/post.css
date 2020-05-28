@@ -18,6 +18,10 @@
       max-height:500px;
       object-fit:cover;
     }
+    .recipe-cover-dscrp{
+      text-align: center;
+      font-size: 0.7em;
+    }
 @media (max-width:850px){
   .recipe-header-container{
     display:flex;
@@ -64,3 +68,37 @@
     .instructions-list{
       margin: 2rem;
     }
+
+.author-container{
+  display:flex;
+  padding:5%;
+  margin-bottom:50px;
+  border:1px solid #2A2B2A;
+}
+  .author-pic{
+    width:200px;
+    object-fit: cover;
+  }
+  .author-info{
+    margin-left:10px;
+    font-size: 0.8em;
+  }
+    .author-position{
+      font-family: 'PT Sans Narrow', sans-serif;
+    }
+    .author-quote{
+      padding: 10px;
+      background:#E8E8E8;
+    }
+      .author-quote p{
+        margin-top:0;
+        margin-bottom:5px;
+        font-style:italic;
+      }
+  @media (max-width:850px){
+    .author-container{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }

@@ -1,7 +1,5 @@
-.filter-section{
-  margin-bottom:30px;
-}
   .filter-inner{
+    margin-bottom:30px;
     text-align:center;
   }
     .search-form{
@@ -79,6 +77,35 @@
             .default-check:checked ~ .checkmark::after{
               display: block;
             }
+@media (min-width:1000px){
+  .main-inner{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+  }
+  .gallery{
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+  }
+  .filter-inner{
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+  }
+    .search-form input{
+      font-size: 0.5em;
+    }
+    .sub-header{
+      font-size:1.2rem;
+    }
+    .filter-container{
+      flex-direction: column;
+    }
+  .all-gallery{
+    margin-top:0;
+  }
+  }
+
   @media (max-width:750px){
     .filter-container{
       flex-wrap: wrap;
