@@ -122,7 +122,9 @@
           justify-content: center;
         }
           .fab{
-            margin:30px 10px 0;
+            margin:30px 0 0;
+            width:60px;
+            object-fit: fill;
           }
 
       .foot2{
